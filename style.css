@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid red;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d2323;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.photo {
+    margin: 0 60px 0 0;
+}
+
+.photo img {
+    border-radius: 46px 6px 46px 6px;
+    border: #8495a7 1px solid;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+}
+
+.section-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+
+.section-item a:hover {
+    color: #4d2323;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.section {
+    width: 50%;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #829985;
+}
+
+.link {
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+}
+
+.link:hover {
+    color: #5d7260;
+}
+
+.section-item {
+    position: relative;
+    padding-left: 30px;
+}
+  
+.section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #829985;
+    border-radius: 50%;
+}
+
+.code {
+    min-height: 288px;
+    font-size: 16px;
+    padding: 10px 30px 10px 30px;
+    letter-spacing: 3px;
+}
+
+footer {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    min-height: 40px;
+    background-color: #34495E;
+    border-radius: 6px 6px 0  0;
+    padding: 6px 20px 6px 20px;
+}
+
+footer h5 {
+    color:#D6DBDF;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+footer img {
+    width: 76px;
+    height: 36px;
+}
+
+footer p {
+    color:#D6DBDF;
+}
